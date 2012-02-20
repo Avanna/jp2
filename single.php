@@ -132,7 +132,7 @@
 		<li><div class="relatedthumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail(array(90,90)); ?></a></div>
 		<div class="relatedcontent">
 		<h3 class="related_header"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-		<h4><?php the_time('M j, Y') ?></h4>
+		<!-- <h4><?php the_time('M j, Y') ?></h4> -->
 		</div>
 		</li>
 		
