@@ -773,8 +773,9 @@ a.comment-reply-link {
 
 h3.related_header {
 	float:;
-	font-size:13px;
+	font-size:11px;
 	font-weight:bold;
+	font-style:none;
 	margin:0;
 	line-height:16px;
 	margin-bottom:9px;
@@ -787,9 +788,9 @@ h3.related_header a {
 }
 
 #related_posts {
-	padding:20px;
+	padding:;
 	margin:18px 0 18px 0;
-	background:#f4f4f4;
+	background:;
 	border:;
 	overflow:hidden;
 }
@@ -805,13 +806,19 @@ h3.related_header a {
 
 #related_posts ul li {
 	float:left;
-	width:50%;
+	width:120px;
+	padding:0 9px;
 	margin:0 0 12px 0;
+	border-left:1px #ddd solid;
+}
+
+#related_posts ul li:first-child {
+	border-left:none;
 }
 
 .relatedthumb {
-	float:left;
-	margin:0 18px 0 0;
+	float:;
+	margin:0 9px 0 0;
 }
 
 .sidebar-widget {
