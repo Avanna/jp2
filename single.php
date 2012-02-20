@@ -107,7 +107,6 @@
 		//for use in the loop, list 5 post titles related to first tag on current post
 		$tags = wp_get_post_tags($post->ID);
 		if ($tags) {
-		  echo 'Related Posts';
 		  $first_tag = $tags[0]->term_id;
 		
 		   $tag_ids  = array();
@@ -123,14 +122,14 @@
 		
 		$my_query = new wp_query( $args );
 		if( $my_query->have_posts() ) {
-		echo '<div id="related_posts"><h2>Related Posts</h2><ul>';
+		echo '<div id="related_posts"><h3>Related Posts</h3><ul>';
 		while( $my_query->have_posts() ) {
 		$my_query->the_post();?>
 		
 		
 		
 			
-		<li><div class="relatedthumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail(array(75,75)); ?></a></div>
+		<li><div class="relatedthumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail(array(90,90)); ?></a></div>
 		<div class="relatedcontent">
 		<h3 class="related_header"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 		<h4><?php the_time('M j, Y') ?></h4>

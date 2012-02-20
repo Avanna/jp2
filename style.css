@@ -89,8 +89,12 @@ blockquote, q {
 }
 
 h2 {
-	font-family:'baskerville';
+	font-family:'lucida grande';
 	font-size:24px;
+}
+
+h4 {
+	font-family:'lucida grande';
 }
 
 /*.main_nav li.selected {
@@ -308,7 +312,7 @@ h2 {
 
 .entry h2 {
 	font-family:'lucida grande';
-	font-size:24px;
+	font-size:22px;
 	line-height:28px;
 	font-weight:normal;
 	font-style:;
@@ -337,13 +341,13 @@ h2 {
 	font-size:18px;
 	line-height:18px;
 	font-weight:normal;
-	font-style:italic;
+	font-style:;
 	letter-spacing:1px;
 	padding:12px 0px;
-	margin:12px 0 12px 0px;
+	margin:0px 0 12px 0px;
 	text-transform:capitalize;
 	color:#000;
-	text-align:center;
+	text-align:;
 	background:;
 	display:;
 }
@@ -789,7 +793,7 @@ h3.related_header a {
 
 #related_posts {
 	padding:;
-	margin:18px 0 18px 0;
+	margin:0px 0 18px 0;
 	background:;
 	border:;
 	overflow:hidden;
