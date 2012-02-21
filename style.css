@@ -897,7 +897,12 @@ background: #333;
 color:#fff;
 }
 
+/*-------------------------- footer styles ------------------- */
 
+#footer {
+	height:100px;
+	background:#222;
+}
 
 
 

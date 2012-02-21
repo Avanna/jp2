@@ -180,7 +180,7 @@ error_reporting(E_ALL);
 			
 			<?php endwhile; ?>
 
-			<? kriesi_pagination($pages = '', $range = 1); ?>
+			<? kriesi_pagination($pages = '', $range = 4); ?>
 			
 			
 
@@ -193,9 +193,9 @@ error_reporting(E_ALL);
 				
 		</div><!-- main content -->
 		
-<?php include('sidebar.php'); ?>
+<?php get_sidebar(); ?>
 
-<?php include('footer.php'); ?>
+<?php get_footer(); ?>
 
 
 		
