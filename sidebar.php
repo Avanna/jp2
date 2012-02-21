@@ -36,67 +36,69 @@
 	</div><!--center-->
 	
 	<div id="categories">
-		
-		<h2>Categories</h2>
-		
-		
-		
-		<div class="category">
-			<p>beauty</p>
-			
-			<?php $category_id = get_cat_ID( 'beauty' );
 
-			    // Get the URL of this category
-			    $category_link = get_category_link( $category_id );
-			?>
-			
-			<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
-			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/beauty.jpg" width="250" height="" alt="" />
-		</div></a>
-		
-		<div class="category">
-			<p>outfits</p>
-			
-			<?php $category_id = get_cat_ID( 'outfits' );
+			<h2>Categories</h2>
 
-			    // Get the URL of this category
-			    $category_link = get_category_link( $category_id );
-			?>
-			
-			<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
-			
-			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/outfits.jpg" width="250" height="" alt="" />
-		</div></a>
-		
-		<div class="category">
-			<p>giveaways</p>
-			
-			<?php $category_id = get_cat_ID( 'giveaways' );
 
-			    // Get the URL of this category
-			    $category_link = get_category_link( $category_id );
-			?>
-			
-			<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
-			
-			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/giveaway.jpg" width="250" height="" alt="" />
-		</div></a>
-		
-		<div class="category">
-			<p>food</p>
-			
-			<?php $category_id = get_cat_ID( 'food' );
 
-			    // Get the URL of this category
-			    $category_link = get_category_link( $category_id );
-			?>
-			
-			<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
-			
-			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/food.jpg" width="250" height="" alt="" />
-		</div></a>
-		
-	</div>
+			<div class="category">
+				<p>beauty</p>
+
+				<?php $category_id = get_cat_ID( 'beauty' );
+
+				    // Get the URL of this category
+				    $category_link = get_category_link( $category_id );
+				?>
+
+				<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
+				<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/beauty.jpg" width="250" height="" alt="" />
+			</div></a>
+
+			<div class="category">
+				<p>outfits</p>
+
+				<?php $category_id = get_cat_ID( 'outfits' );
+
+				    // Get the URL of this category
+				    $category_link = get_category_link( $category_id );
+				?>
+
+				<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
+
+				<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/outfits.jpg" width="250" height="" alt="" />
+			</div></a>
+
+			<div class="category">
+				<p>giveaways</p>
+
+				<?php $category_id = get_cat_ID( 'giveaways' );
+
+				    // Get the URL of this category
+				    $category_link = get_category_link( $category_id );
+				?>
+
+				<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
+
+				<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/giveaway.jpg" width="250" height="" alt="" />
+			</div></a>
+
+			<div class="category">
+				<p>food</p>
+
+				<?php $category_id = get_cat_ID( 'food' );
+
+				    // Get the URL of this category
+				    $category_link = get_category_link( $category_id );
+				?>
+
+				<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
+
+				<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/food.jpg" width="250" height="" alt="" />
+			</div></a>
+
+		</div>
+	
+	
 	
 	<h2>archives & blogroll</h2>
 	
