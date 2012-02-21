@@ -305,7 +305,7 @@ h4 {
 
 .entry {
 	border-bottom:5px #555 solid;
-	margin:-8px 0 60px 0;
+	margin:-8px 0 80px 0;
 	position:relative;
 	overflow:visible;
 	min-height:400px;
@@ -332,10 +332,16 @@ h4 {
 		border-bottom:1px #ccc solid;*/
 }
 
+.entry-content a {
+	color: #E24634;
+}
+
 .entry h2 a {
 	text-decoration:none;
 	color:#fff;
 }
+
+
 
 .entry h3 {
 	font-family:'lucida grande';
@@ -375,10 +381,10 @@ h3.comment span {
 }
 
 .entry img {
-	margin:-30px 0 0 0;
+	margin:-30px auto 0 auto;
 	/*padding:10px;
-		background:#fff;
-		border:1px #ddd solid;*/
+				background:#fff;*/
+			/*border:1px #ddd solid;*/
 }
 
 #sidebar h2 {
@@ -517,7 +523,7 @@ p {
 	float:right;
 	height:;
 	padding:0 0 0 9px;
-	margin:5px 15px 0 0;
+	margin:8px 15px 0 0;
 	background:#fff;
 	border:1px #bbbbbb solid;
 	border-radius:;
@@ -554,7 +560,7 @@ p {
 #search-submit {
 	float:left;
 	font-size:18px;
-	height:24px;
+	height:20px;
 	padding:3px 6px 3px 6px;
 	color:#fff;
 	border:none;
@@ -782,14 +788,17 @@ h3.related_header {
 	font-weight:bold;
 	font-style:none;
 	margin:0;
-	line-height:16px;
+	line-height:11px;
 	margin-bottom:9px;
 	text-align:left;
+	word-wrap: break-word;
 }
 
 h3.related_header a {
+	font-family:helvetica, arial, sans-serif;
 	margin:0;
-	color:#e24634;
+	text-decoration:none;
+	color:#555;
 }
 
 #related_posts {
@@ -805,13 +814,14 @@ h3.related_header a {
 }
 
 #related_posts img {
+	padding:4px;
 	margin:0;
-	border:8px #fff solid;	
+	border:1px #ccc solid;	
 }
 
 #related_posts ul li {
 	float:left;
-	width:120px;
+	width:100px;
 	padding:0 9px;
 	margin:0 0 12px 0;
 	border-left:1px #ddd solid;
@@ -823,7 +833,7 @@ h3.related_header a {
 
 .relatedthumb {
 	float:;
-	margin:0 9px 0 0;
+	margin:0 5px 0 0;
 }
 
 .sidebar-widget {
@@ -849,7 +859,7 @@ h3.related_header a {
 .pagination {
 clear:both;
 padding:20px 0;
-margin:-30px 0 0 0;
+margin:-60px 0 18px 0;
 position:relative;
 font-size:11px;
 line-height:13px;
@@ -864,18 +874,18 @@ margin: 2px 4px 2px 0;
 padding:12px;
 text-decoration:none;
 width:auto;
-color:#555;
+color:#333;
 background: #f4f4f4;
 }
 
 .pagination a:hover{
 color:#fff;
-background: #3279BB;
+background: #333;
 }
 
 .pagination .current{
 padding:12px;
-background: #ddd;
+background: #333;
 color:#fff;
 }
 

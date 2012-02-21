@@ -34,7 +34,7 @@ register_sidebar(array(
 
 add_theme_support( 'post-thumbnails' );
 
-set_post_thumbnail_size( 75, 90, true );
+set_post_thumbnail_size( 90, 120, true );
 
 
 //add kriesi pagination
