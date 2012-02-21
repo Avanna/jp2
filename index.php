@@ -112,11 +112,21 @@ error_reporting(E_ALL);
 
 			
 			
-			<?php
-			
-			$orig_post = $post;
-			global $post;
-			
+			<?php $orig_post = $post;
+					global $post;
+			// 		$categories = get_the_category($post->ID);
+			// 		if ($categories) {
+			// 		$category_ids = array();
+			// 		foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+			// 
+			// 		$args=array(
+			// 		'category__in' => $category_ids,
+			// 		'post__not_in' => array($post->ID),
+			// 		'posts_per_page'=> 3, // Number of related posts that will be shown.
+			// 		'caller_get_posts'=>1
+			// 		);
+
+			//for use in the loop, list 5 post titles related to first tag on current post
 			$tags = wp_get_post_tags($post->ID);
 			if ($tags) {
 			  $first_tag = $tags[0]->term_id;
@@ -125,7 +135,7 @@ error_reporting(E_ALL);
 
 			foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
 
-			  $args = array(
+			  $args=array(
 			    'tag__in' => $tag_ids,
 			    'post__not_in' => array($post->ID),
 			    'showposts'=>4,
@@ -135,9 +145,11 @@ error_reporting(E_ALL);
 			$my_query = new wp_query( $args );
 			if( $my_query->have_posts() ) {
 			echo '<div id="related_posts"><h3>Related Posts</h3><ul>';
-			
-			while ($my_query->have_posts()) : $my_query->the_post(); ?>
-			
+			while( $my_query->have_posts() ) {
+			$my_query->the_post();?>
+
+
+
 
 			<li><div class="relatedthumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail(array(90,90)); ?></a></div>
 			<div class="relatedcontent">
@@ -148,33 +160,25 @@ error_reporting(E_ALL);
 
 
 
-			<?php
-			
-			
-			
-			
-			echo '</ul>'; 
-			
-			endwhile;
-			
-			} ?>
-			
-			
+			<?
+			}
+			echo '</ul>'; ?>
 
 			<div class="clear"></div>
 
-			
-			</div><!--/post-->
-			</div>
-		<?php
-		}
+			<?php
+
+			echo '</div>';
+			}
+			}
 			$post = $orig_post;
+			//wp_reset_query(); 
 			
-			// wp_reset_query(); 
+			 ?>
 			
-			 endwhile; ?>
+			</div><!-- entry -->
 			
-			
+			<?php endwhile; ?>
 
 			<? kriesi_pagination($pages = '', $range = 1); ?>
 			
@@ -187,7 +191,7 @@ error_reporting(E_ALL);
 			</div>
 			
 				
-		</div>
+		</div><!-- main content -->
 		
 <?php include('sidebar.php'); ?>
 
