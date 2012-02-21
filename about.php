@@ -22,9 +22,15 @@ Template Name: about
 			
 		</div><!--main_content-->
 		
-<?php include('sidebar.php'); ?>
+		<?php get_sidebar(); ?>
 
-<?php include('footer.php'); ?>
+			<div class="clear"></div>
+
+		</div><!--content-->
+
+		</div><!--wrapper-->
+
+		<?php get_footer(); ?>
 	
 </body>
 

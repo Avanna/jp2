@@ -116,18 +116,7 @@
 	
 	<a href="http://rstyle.me/ad/c9qqd6hw" target="_blank"><img src="http://ad.linksynergy.com/fs-bin/show?id=QFGLnEolOWg&bids=206135.10000502&type=4" /></a>
 	
-	<!--center-->
-		
-		<!-- <div class="center">
-			
-			<a href="http://rstyle.me/ad/ce2md6hw" target="_blank"><img src="http://ad.linksynergy.com/fs-bin/show?id=QFGLnEolOWg&bids=243082.10000096&type=4" width="250" height="250"/></a>
-			
-			<a href="http://rstyle.me/ad/bkcwd6hw" target="_blank"><img src="http://www.lduhtrp.net/image-4441350-10519211" /></a>
-			
-			<a href="http://rstyle.me/ad/c9qqd6hw" target="_blank"><img src="http://ad.linksynergy.com/fs-bin/show?id=QFGLnEolOWg&bids=206135.10000502&type=4" /></a>
-			
-			</div> --><!--center-->
+
+	</div><!-- center -->
 	
-	
-	
-</div>
+</div><!--sidebar-->

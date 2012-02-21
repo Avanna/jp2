@@ -22,10 +22,15 @@ Template Name: store
 			
 		</div><!--main_content-->
 		
-<?php include('sidebar.php'); ?>
+		<?php get_sidebar(); ?>
 
+			<div class="clear"></div>
 
-<?php include('footer.php'); ?>
+		</div><!--content-->
+
+		</div><!--wrapper-->
+
+		<?php get_footer(); ?>
 	
 </body>
 

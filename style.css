@@ -264,7 +264,7 @@ h4 {
 		-webkit-box-shadow: 0px 0px 7px #a2a3a0;
 		box-shadow: 0px 0px 7px #a2a3a0;*/
 	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
-	/*overflow:visible;*/
+	overflow:hidden;
 }
 
 #main_content {
@@ -274,7 +274,7 @@ h4 {
 	margin:30px 0 0 0;
 	/*border-right:1px #ddd solid;*/
 	background:#fff;
-	/*border:1px #e6e6e6 solid;*/
+	border-bottom:3px #555 solid;
 	overflow:visible;
 }
 
@@ -900,12 +900,102 @@ color:#fff;
 /*-------------------------- footer styles ------------------- */
 
 #footer {
-	height:100px;
-	background:#222;
+	width:100%;
+	height:;
+	background:;
+	clear:both;
+	position:;
+	bottom:;
 }
 
+.footer_nav {
+	float:;
+	width:1000px;
+	height:;
+	overflow:hidden;
+	padding:;
+	margin:0 auto;
+	text-align:;
+	border-bottom:;
+	background:;
+	/*border-bottom:2px #ddd dotted;
+		border-top:2px #ddd dotted;*/
+		
+}
 
+.footer_nav li {
+	font-family:'lucida grande';
+	font-size:16px;
+	font-weight:;
+	font-style:;
+	letter-spacing:1px;
+	float:left;
+	display:inline-block;
+	padding:0 24px;
+	margin:0 0px 0 0;
+	/*background:url(images/nav_bg2.png) no-repeat;*/
+	border-right:1px #ddd solid;
+	/*border-bottom:2px #ccc dotted;*/
+	/*border-top:2px #ccc dotted;*/
+}
 
+.footer_nav li:last-child {
+	margin-right:0;
+}
+
+.footer_nav li:first-child {
+	padding-left:;
+}
+
+.footer_nav li a {
+	width:;
+	/*height:40px;*/
+	line-height:42px;
+	padding:0 18px;
+	font-weight:bold;
+	text-decoration:none;
+	text-transform:capitalize;
+	color:#000;
+	display:inline-block;
+	background:;
+	/*border-bottom:#555 3px solid;*/
+	
+	
+	/*border-top:1px #ddd solid;*/
+	
+	/*background:url(images/nav_bg.png);*/
+}
+
+.footer_nav li a:hover {
+	/*border-top:3px #ddd solid;*/
+	color:#000;
+	/*background:url(images/nav_bg.png);*/
+}
+
+#footer_menu {
+	width:100%;
+	overflow:hidden;
+	padding:3px 0 2px 0;
+	margin:0 0 10px 0;
+	/*border:1px #555 solid;*/
+	border-top:3px #555 solid;
+		/*border-bottom:1px #999 solid;*/
+	background:#fff;
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#f7f7f7', endColorstr = '#d7dbd7');
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#f7f7f7', endColorstr = '#d7dbd7')";
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	/*background-image: -moz-linear-gradient(top, #f7f7f7, #d7dbd7);
+				background-image: -ms-linear-gradient(top, #f7f7f7, #d7dbd7);
+				background-image: -o-linear-gradient(top, #f7f7f7, #d7dbd7);
+				background-image: -webkit-gradient(linear, center top, center bottom, from(#f7f7f7), to(#d7dbd7));
+				background-image: -webkit-linear-gradient(top, #f7f7f7, #d7dbd7);
+				background-image: linear-gradient(top, #f7f7f7, #d7dbd7);*/
+	/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/
+}
 
 
 

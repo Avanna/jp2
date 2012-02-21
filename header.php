@@ -62,7 +62,7 @@
 				<?php } else { ?>
 				        <div id="blog-description"><?php bloginfo( 'description' ); ?></div>
 				<?php } ?> -->
-		   </div><!– #logo-wrapper –>
+		   </div>
 		
 		<div id="menu">
 

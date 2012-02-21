@@ -195,9 +195,13 @@ error_reporting(E_ALL);
 		
 <?php get_sidebar(); ?>
 
+	<div class="clear"></div>
+
+</div><!--content-->
+
+</div><!--wrapper-->
+
 <?php get_footer(); ?>
-
-
 		
 <script type="text/javascript" src="js/site.js" charset="utf-8"></script>
 	
