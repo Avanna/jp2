@@ -108,8 +108,14 @@ error_reporting(E_ALL);
 			      }());
 			    </script>
 			</div>
+		
+
+			
 			
 			<?php
+			
+			$orig_post = $post;
+			global $post;
 			
 			$tags = wp_get_post_tags($post->ID);
 			if ($tags) {
@@ -119,7 +125,7 @@ error_reporting(E_ALL);
 
 			foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
 
-			  $args=array(
+			  $args = array(
 			    'tag__in' => $tag_ids,
 			    'post__not_in' => array($post->ID),
 			    'showposts'=>4,
@@ -129,11 +135,9 @@ error_reporting(E_ALL);
 			$my_query = new wp_query( $args );
 			if( $my_query->have_posts() ) {
 			echo '<div id="related_posts"><h3>Related Posts</h3><ul>';
-			while( $my_query->have_posts() ) {
-			$my_query->the_post();?>
-
-
-
+			
+			while ($my_query->have_posts()) : $my_query->the_post(); ?>
+			
 
 			<li><div class="relatedthumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail(array(90,90)); ?></a></div>
 			<div class="relatedcontent">
@@ -144,35 +148,37 @@ error_reporting(E_ALL);
 
 
 
-			<?
-			}
-			echo '</ul>'; ?>
+			<?php
+			
+			
+			
+			
+			echo '</ul>'; 
+			
+			endwhile;
+			
+			} ?>
+			
+			
 
 			<div class="clear"></div>
 
-			<?php
-
-			echo '</div>';
-			}
-			}
-			$post = $orig_post;
-			wp_reset_query(); ?>
-
-
-
-			</div><!--/post-->
-
-			<?php endwhile; ?>
-
-
 			
-			<?php /* Bottom post navigation */ ?>
-			<?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
-			    <div id="nav-below" class="navigation">
-			     <div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'your-theme' )) ?></div>
-			     <div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'your-theme' )) ?></div>
-			    </div><!– #nav-below –>
-			<?php } ?>
+			</div><!--/post-->
+			</div>
+		<?php
+		}
+			$post = $orig_post;
+			
+			// wp_reset_query(); 
+			
+			 endwhile; ?>
+			
+			
+
+			<? kriesi_pagination($pages = '', $range = 1); ?>
+			
+			
 
 			<div class="bottom_ad">
 
@@ -180,10 +186,7 @@ error_reporting(E_ALL);
 
 			</div>
 			
-			
-			
-			
-			
+				
 		</div>
 		
 <?php include('sidebar.php'); ?>

@@ -305,15 +305,16 @@ h4 {
 
 .entry {
 	border-bottom:5px #555 solid;
-	margin:-8px 0 125px 0;
+	margin:-8px 0 60px 0;
 	position:relative;
 	overflow:visible;
+	min-height:400px;
 }
 
 .entry h2 {
 	font-family:'lucida grande';
-	font-size:22px;
-	line-height:28px;
+	font-size:18px;
+	line-height:22px;
 	font-weight:normal;
 	font-style:;
 	letter-spacing:1px;
@@ -323,7 +324,7 @@ h4 {
 	color:#fff;
 	text-align:center;
 	background:#222;
-	border-bottom:7px #444 solid;
+	/*border-bottom:7px #444 solid;*/
 	position:absolute;
 	top:30px;
 	left:0px;
@@ -843,6 +844,40 @@ h3.related_header a {
 	color:#555;
 }
 
+/*--------------------------- pagination styles ------------------------------------*/
+
+.pagination {
+clear:both;
+padding:20px 0;
+margin:-30px 0 0 0;
+position:relative;
+font-size:11px;
+line-height:13px;
+overflow:hidden;
+}
+
+.pagination span, .pagination a {
+display:block;
+font-size:18px;
+float:left;
+margin: 2px 4px 2px 0;
+padding:12px;
+text-decoration:none;
+width:auto;
+color:#555;
+background: #f4f4f4;
+}
+
+.pagination a:hover{
+color:#fff;
+background: #3279BB;
+}
+
+.pagination .current{
+padding:12px;
+background: #ddd;
+color:#fff;
+}
 
 
 
