@@ -6,17 +6,17 @@
 	
 	<div id="social">
 		
-	<a href="http://www.facebook.com/pages/JustPatience/208612525847630
- " target="blank" ><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/facebook.png" width="50" alt="" /></a>
+		
+		<a href="http://www.facebook.com/pages/JustPatience/208612525847630
+	 " target="blank" ><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/facebook.png" width="50" alt="" /></a>
 
-	<a href="http://www.facebook.com/pages/JustPatience/208612525847630
- " target="blank" ><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/twitter.png" width="50" alt="" /></a>
+	<a href="http://twitter.com/justpatie" alt="" target="blank" ><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/twitter.png" width="50" alt="" /></a>
 
-	<a href="http://www.facebook.com/pages/JustPatience/208612525847630
- " target="blank" ><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/rss.png" width="50" alt="" /></a>
+	<a href="<?php bloginfo('rss2_url'); ?>" title="<?php _e('Syndicate this site using RSS'); ?>"><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/rss.png" width="50" alt="" /></a>
 
-	<a href="http://www.facebook.com/pages/JustPatience/208612525847630
- " target="blank" ><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/gmail.png" width="50" alt="" /></a>
+	
+
+	<a href="<?php echo get_page_link(36); ?>"><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/gmail.png" width="50" alt="" /></a>
 
 	<div class="blog_loving clearfix" style="text-align:center; margin-bottom:0px;">
 	
@@ -39,25 +39,62 @@
 		
 		<h2>Categories</h2>
 		
-		<div class="category">
-			<p>food</p>
-			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/food.jpg" width="250px" height="" alt="" />
-		</div>
+		
 		
 		<div class="category">
 			<p>beauty</p>
-			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/beauty.jpg" width="250px" height="" alt="" />
-		</div>
+			
+			<?php $category_id = get_cat_ID( 'beauty' );
+
+			    // Get the URL of this category
+			    $category_link = get_category_link( $category_id );
+			?>
+			
+			<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
+			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/beauty.jpg" width="250" height="" alt="" />
+		</div></a>
 		
 		<div class="category">
 			<p>outfits</p>
-			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/outfit.jpg" width="250px" height="" alt="" />
-		</div>
+			
+			<?php $category_id = get_cat_ID( 'outfits' );
+
+			    // Get the URL of this category
+			    $category_link = get_category_link( $category_id );
+			?>
+			
+			<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
+			
+			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/outfits.jpg" width="250" height="" alt="" />
+		</div></a>
 		
 		<div class="category">
 			<p>giveaways</p>
-			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/giveaway.jpg" width="250px" height="" alt="" />
-		</div>	
+			
+			<?php $category_id = get_cat_ID( 'giveaways' );
+
+			    // Get the URL of this category
+			    $category_link = get_category_link( $category_id );
+			?>
+			
+			<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
+			
+			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/giveaway.jpg" width="250" height="" alt="" />
+		</div></a>
+		
+		<div class="category">
+			<p>food</p>
+			
+			<?php $category_id = get_cat_ID( 'food' );
+
+			    // Get the URL of this category
+			    $category_link = get_category_link( $category_id );
+			?>
+			
+			<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">
+			
+			<img src="<?php echo(get_bloginfo('template_directory')); ?>/images/food.jpg" width="250" height="" alt="" />
+		</div></a>
 		
 	</div>
 	

@@ -34,7 +34,7 @@ body {
 	color: black;
 	background:#f4f4f4;
 	padding:0 0 0 0;
-	
+	margin:0;
 }
 ol, ul {
 	list-style: none;
@@ -84,6 +84,10 @@ blockquote, q {
 	text-align:center;
 }
 
+.center a {
+	color:#E24634;
+}
+
 .padding_30 {
 	padding:30px;
 }
@@ -116,11 +120,11 @@ h4 {
 
 #header {
 	width:;
-	height:250px;
-	padding:10px 0;
+	height:324px;
+	padding:0 0 10px 0;
 	margin:0px 0 0px 0;
 	background:url(images/header_bg8.png) no-repeat -20px 0px;
-	
+	position:relative;
 	/*border-bottom:2px #ddd dotted;*/
 	/*border-radius:12px;*/
 	
@@ -160,12 +164,15 @@ h4 {
 }
 
 #menu {
+	width:100%;
 	overflow:hidden;
 	padding:3px 0 2px 0;
 	margin:0 0 10px 0;
 	/*border:1px #555 solid;*/
 	border-top:1px #ddd solid;
 		border-bottom:1px #999 solid;
+		position:absolute;
+		bottom:0;
 	/*background:#fff;*/
 	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#f7f7f7', endColorstr = '#d7dbd7');
 	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
@@ -280,7 +287,8 @@ h4 {
 }
 
 #sidebar ul {
-	margin:0 0 44px 0;
+	padding:0 0 9px;
+	margin:0 0 9px 0;
 	overflow:hidden;
 }
 
@@ -391,10 +399,10 @@ h3.comment span {
 	height:;
 	width:;
 	font-family:'baskerville';
-	font-size:26px;
+	font-size:22px;
 	font-weight:;
 	font-style:italic;
-	padding:9px;
+	padding:6px 9px;
 	margin:30px 0 18px 0;
 	text-align:center;
 	text-transform:capitalize;
@@ -460,10 +468,10 @@ p {
 	position:absolute;
 	left:-95px;
 	top:-32px;
-	padding:6px 6px 12px;
+	padding:9px 6px 12px;
 	border-right:;
 	background:#fff;
-	border:1px #e6e6e6 solid;
+	/*border:1px #e6e6e6 solid;*/
 	border-bottom:5px #555 solid;
 	text-align:center;
 	/*border-bottom:5px #555 solid;*/
@@ -477,9 +485,9 @@ p {
 }
 
 .postdate span {
-	font-family:georgia;
+	font-family:helvetica, arial, sans-serif;
 	font-size:36px;
-	padding:0 0 12px 0;
+	padding:6px 0 6px 0;
 	margin:0 0 12px 0;
 	border-bottom:1px #ddd solid;
 	font-style:italic;
@@ -488,10 +496,10 @@ p {
 }
 
 .postdate h4 {
- 	font-size:16px;
+ 	font-size:13px;
 	font-style:;
 	text-transform:uppercase;
-	color:#e24634;
+	color:#777;
 	margin:6px 0 0px 0;
 }
 
@@ -581,7 +589,7 @@ p {
 .category {
 	float:;
 	width:;
-	height:200px;
+	height:;
 	position:relative;
 	border:;
 	margin:0 0 18px 0;
@@ -795,10 +803,10 @@ h3.related_header {
 }
 
 h3.related_header a {
-	font-family:helvetica, arial, sans-serif;
+	font-family:arial, sans-serif;
 	margin:0;
 	text-decoration:none;
-	color:#555;
+	color:#777;
 }
 
 #related_posts {

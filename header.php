@@ -63,21 +63,22 @@
 				        <div id="blog-description"><?php bloginfo( 'description' ); ?></div>
 				<?php } ?> -->
 		   </div><!– #logo-wrapper –>
+		
+		<div id="menu">
+
+			<ul class="main_nav">
+				<?php wp_nav_menu(array('menu' => 'top_menu')); ?>
+			</ul>
+
+
+			<form id="search-form">
+
+				<input type="text" id="search" name="search" value="search"/>
+				<input type="image" id="search-submit" src="<?php echo(get_bloginfo('template_directory')); ?>/images/search_icon.png" name="search-submit" alt="search" />
+
+			</form>	
+
+		</div><!--/menu-->
 	
 	</div><!--/header-->
 	
-<div id="menu">
-	
-	<ul class="main_nav">
-		<?php wp_nav_menu(array('menu' => 'top_menu')); ?>
-	</ul>
-	
-		
-	<form id="search-form">
-			
-		<input type="text" id="search" name="search" value="search"/>
-		<input type="image" id="search-submit" src="<?php echo(get_bloginfo('template_directory')); ?>/images/search_icon.png" name="search-submit" alt="search" />
-		
-	</form>	
-		
-</div><!--/menu-->
