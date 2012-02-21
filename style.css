@@ -32,8 +32,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	line-height: 1;
 	color: black;
-	background:#f4f4f4 url(images/header_bg8.png) no-repeat 110px 0px;
-	padding:160px 0 0 0;
+	background:#f4f4f4;
+	padding:0 0 0 0;
 	
 }
 ol, ul {
@@ -116,10 +116,10 @@ h4 {
 
 #header {
 	width:;
-	height:;
+	height:250px;
 	padding:10px 0;
-	margin:80px 0 14px 0;
-	background:;
+	margin:0px 0 0px 0;
+	background:url(images/header_bg8.png) no-repeat -20px 0px;
 	
 	/*border-bottom:2px #ddd dotted;*/
 	/*border-radius:12px;*/
