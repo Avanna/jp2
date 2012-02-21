@@ -902,13 +902,13 @@ color:#fff;
 #footer {
 	width:100%;
 	height:;
-	background:;
+	background:#f4f4f4;
 	clear:both;
-	position:;
-	bottom:;
+	position:fixed;
+	bottom:0;
 }
 
-.footer_nav {
+.footer-nav {
 	float:;
 	width:1000px;
 	height:;
@@ -923,7 +923,7 @@ color:#fff;
 		
 }
 
-.footer_nav li {
+.footer-nav li {
 	font-family:'lucida grande';
 	font-size:16px;
 	font-weight:;
@@ -939,15 +939,15 @@ color:#fff;
 	/*border-top:2px #ccc dotted;*/
 }
 
-.footer_nav li:last-child {
+.footer-nav li:last-child {
 	margin-right:0;
 }
 
-.footer_nav li:first-child {
-	padding-left:;
+.footer-nav li:first-child {
+	padding-left:0;
 }
 
-.footer_nav li a {
+.footer-nav li a {
 	width:;
 	/*height:40px;*/
 	line-height:42px;
@@ -966,20 +966,20 @@ color:#fff;
 	/*background:url(images/nav_bg.png);*/
 }
 
-.footer_nav li a:hover {
+.footer-nav li a:hover {
 	/*border-top:3px #ddd solid;*/
 	color:#000;
 	/*background:url(images/nav_bg.png);*/
 }
 
-#footer_menu {
+#footer-menu {
 	width:100%;
 	overflow:hidden;
 	padding:3px 0 2px 0;
 	margin:0 0 10px 0;
 	/*border:1px #555 solid;*/
 	border-top:3px #555 solid;
-		/*border-bottom:1px #999 solid;*/
+	border-bottom:1px #999 solid;
 	background:#fff;
 	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#f7f7f7', endColorstr = '#d7dbd7');
 	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
@@ -997,7 +997,51 @@ color:#fff;
 	/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/
 }
 
+#footer-categories{
+	width:1000px;
+	overflow:hidden;
+	padding:18px 0px 0;
+	margin:0 auto;
+	border-top:3px #555 solid;
+}
 
+#footer-categories h2 {
+	font-size:16px;
+	margin:0 0 18px 0;
+}
+
+.footer-category {
+	float:left;
+	width:25%;
+	height:90px;
+	position:relative;
+	border:;
+	margin:0 0 18px 0;
+	overflow:hidden;
+}
+
+#footer-categories .footer-category img {
+	margin:0;
+}
+
+#footer-categories .footer-category:nth-of-type(2n+2) {
+	margin-right:0;
+}
+
+#footer-categories .footer-category p {
+	font-family:;
+	font-size:20px;
+	font-weight:;
+	font-style:italic;
+	line-height:;
+	margin:0;
+	padding:6px 12px;
+	position:absolute;
+	top:40px;
+	left:0;
+	background:#222;
+	color:#fff;
+}
 
 
 
