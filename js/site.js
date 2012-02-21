@@ -1,5 +1,19 @@
 $(document).ready(function() {
 	
+	$('#footer').hide();
+	
+	$(window).scroll(function(){
+	
+	scrollTop = $(window).scrollTop();
+	
+	if(scrollTop > 800) {
+		$('#footer').slideDown('slow');
+	} 
+	else {
+		$('#footer').slideUp('slow');
+	}
+	
+	});
 	
 	//load about page with ajax
 	
@@ -41,7 +55,7 @@ $(document).ready(function() {
 	
 	//scrip for navigation cloning and hiding
 	
-	var clonedEl, el = $('.main_nav');
+	var clonedEl, el = $('#menu');
 	
 	clonedEl = el;
 	
@@ -49,7 +63,7 @@ $(document).ready(function() {
 	
 $(window).scroll(function(){
 	
-	var el = $('.main_nav'),
+	var el = $('#menu'),
 	offset	= el.offset(),
 	scrollTop = $(window).scrollTop();
 	

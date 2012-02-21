@@ -203,7 +203,7 @@ error_reporting(E_ALL);
 
 <?php get_footer(); ?>
 		
-<script type="text/javascript" src="js/site.js" charset="utf-8"></script>
+<script type="text/javascript" src="<?php echo(get_bloginfo('template_directory')); ?>/js/site.js" charset="utf-8"></script>
 	
 </body>
 

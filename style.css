@@ -255,7 +255,7 @@ h4 {
 }
 
 #content {
-	margin:0px 0 0 0;
+	margin:0px 0 80px 0;
 	padding:0px 0 60px 0;
 	background:;
 	/*border-top:3px #555 solid;*/
@@ -508,13 +508,13 @@ p {
 }
 
 .fixed {
-	width:970px;
+	width:;
 	position:fixed;
 	top:0;
 	left:;
 	z-index:1200;
 	visibility:hidden;
-	background:#222;
+	background:#ddd;
 	border-bottom:8px #fff solid;
 	color:#fff;
 }
@@ -1000,7 +1000,7 @@ color:#fff;
 #footer-categories{
 	width:1000px;
 	overflow:hidden;
-	padding:18px 0px 0;
+	padding:9px 0px 0;
 	margin:0 auto;
 	border-top:3px #555 solid;
 }
@@ -1016,7 +1016,7 @@ color:#fff;
 	height:90px;
 	position:relative;
 	border:;
-	margin:0 0 18px 0;
+	margin:0 0 9px 0;
 	overflow:hidden;
 }
 
