@@ -6,7 +6,7 @@ $(document).ready(function() {
 	
 		scrollTop = $(window).scrollTop();
 	
-			if(scrollTop > 800) {
+			if(scrollTop > 3200) {
 				$('#footer').slideDown('slow');
 			} 
 			else {

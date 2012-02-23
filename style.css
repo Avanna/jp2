@@ -235,7 +235,7 @@ h4 {
 	line-height:42px;
 	padding:0 18px;
 	font-weight:bold;
-	text-decoration:none;
+	text-decoration:;
 	text-transform:capitalize;
 	color:#000;
 	display:inline-block;
@@ -660,8 +660,8 @@ p {
 }
 
 #social {
-	padding:15px;
-	background:#faf5db;
+	padding:;
+	background:#fff;
 	margin:0 0 18px 0;
 	border:15px #fff solid;
 }
@@ -1043,6 +1043,64 @@ color:#fff;
 	color:#fff;
 }
 
+#footer-wrapper {
+	width:1000px;
+	height:48px;
+	overflow:hidden;
+	margin:0 auto;
+	background:#fff;
+	border-top:3px #555 solid;
+}
+
+
+#footer-like {
+	float:left;
+	width:360px;
+	padding:0 30px;
+	margin:-30px 0 0 0;
+}
+
+#footer-comment-link {
+	float:right;
+	width:580px;
+	padding:15px 0;
+	overflow:hidden;
+}
+
+#footer-comment-link a {
+	float:left;
+	font-size:14px;
+	margin:0px 18px 0 0;
+	color:#E24634;
+	text-transform:capitalize;
+}
+
+#footer-social {
+	float:right;
+	margin:-12px 0 0 0;
+}
+
+#about-wrapper {
+	position:relative;
+}
+
+#about-wrapper h2 {
+	position:absolute;
+	top:480px;
+	background:#111;
+	padding:10px 30px;
+	color:#fff;
+		background: url(images/background_trans.png);
+}
+
+#about-wrapper p {
+	width:420px;
+	position:absolute;
+	top:500px;
+	padding:30px;
+	background: url(images/background_trans.png);
+	color:#f4f4f4;
+}
 
 
 

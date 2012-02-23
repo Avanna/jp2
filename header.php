@@ -38,6 +38,8 @@
 	
 </script>
 
+<script type="text/javascript" src="<?php echo(get_bloginfo('template_directory')); ?>/js/site.js" charset="utf-8"></script>
+
 </head>
 
 
@@ -77,7 +79,7 @@
 
 			<form id="search-form">
 
-				<input type="text" id="search" name="search" value="search"/>
+				<input type="text" id="search" name="search" value=""/>
 				<input type="image" id="search-submit" src="<?php echo(get_bloginfo('template_directory')); ?>/images/search_icon.png" name="search-submit" alt="search" />
 
 			</form>	
