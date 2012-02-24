@@ -1102,6 +1102,26 @@ color:#fff;
 	color:#f4f4f4;
 }
 
+#top_nav {
+	height:;
+	border-bottom:2px #555 solid;
+}
+
+#top_nav ul {
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#top_nav ul li {
+	float:left;
+	margin:0 36px 0 0;
+}
+
+#top_nav ul li a {
+	color:#555;
+	text-decoration:none;
+}
 
 
 
