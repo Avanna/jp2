@@ -95,7 +95,7 @@
 				<div id="footer-comment-link">
 					
 					<?php if ( ('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Comments and trackbacks open ?>
-					      <?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a>', 'your-theme' ), get_trackback_url() ) ?>
+					      <?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Comment</a>', 'your-theme' ), get_trackback_url() ) ?>
 					<?php elseif ( !('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Only trackbacks open ?>
 					      <?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'your-theme' ), get_trackback_url() ) ?>
 					<?php elseif ( ('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // Only comments open ?>

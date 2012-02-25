@@ -75,8 +75,10 @@ error_reporting(E_ALL);
 			      <span class="meta-sep"> | </span>
 			      <?php the_tags( '<span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">' . __('Tagged ', 'your-theme' ) . '</span>', ", ", "</span>\n\t\t\t\t\t\t<span class=\"meta-sep\">|</span>\n" ) ?>
 			
-				<span class="meta-sep"> | </span>
+				<span class="meta-sep"></span>
 				
+				<br />
+				<br />
 			      <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'your-theme' ), __( '1 Comment', 'your-theme' ), __( '% Comments', 'your-theme' ) ) ?></span>
 			      <?php edit_post_link( __( 'Edit', 'your-theme' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t\n" ) ?><p>
 			     </div><!– #entry-utility –>
