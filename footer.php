@@ -6,7 +6,7 @@
 	</ul>
 </div> --><!--footer_menu-->
 
-	<?php if ( is_home() || is_front_page() ) { ?>
+	<?php if ( is_home() || is_front_page() || is_page() ) { ?>
 	
 	<div id="footer-categories">
 		

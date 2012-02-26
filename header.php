@@ -57,28 +57,28 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 	
 
-	<div id="top_nav" class="cleafix">
-		
-		<ul class="clearfix">
-			<li><a href="#" title="">subscribe</a></li>
-			<li><a href="#" title="">categories</a>
-				<div class="drop-down">
-				<?php $categories = get_categories( $args );?> 
-				
-				<?php foreach($categories as $category) {
-					?>
-						
-					<p>
-					<?php echo $category->name; ?>
-					</p>
-				
-				<?php }
-				?></div></li>
-			<li><a href="#" title="">popular posts</a></li>
-			<li><a href="#" title="">shopping</a></li>
-		</ul>
+	<!-- <div id="top_nav" class="cleafix">
+			
+			<ul class="clearfix">
+				<li><a href="#" title="">subscribe</a></li>
+				<li><a href="#" title="">categories</a>
+					<div class="drop-down">
+					<?php $categories = get_categories( $args );?> 
+					
+					<?php foreach($categories as $category) {
+						?>
+							
+						<p>
+						<?php echo $category->name; ?>
+						</p>
+					
+					<?php }
+					?></div></li>
+				<li><a href="#" title="">popular posts</a></li>
+				<li><a href="#" title="">shopping</a></li>
+			</ul>
 
-	</div><!--top_nav-->
+		</div> --><!--top_nav-->
 
 <div id="wrapper">
 			
