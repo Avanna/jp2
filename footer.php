@@ -38,9 +38,9 @@
 		</div></a>
 		
 		<div class="footer-category">
-			<p>giveaways</p>
+			<p>fashion</p>
 			
-			<?php $category_id = get_cat_ID( 'giveaways' );
+			<?php $category_id = get_cat_ID( 'fashion' );
 
 			    // Get the URL of this category
 			    $category_link = get_category_link( $category_id );
@@ -118,7 +118,7 @@
 
 
 
-					<a href="<?php echo get_page_link(36); ?>"><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/gmail2.png" width="35" alt="" /></a>
+					<a href="<?php echo get_page_link(24); ?>"><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/gmail2.png" width="35" alt="" /></a>
 
 					<a title="JustPatience on Bloglovin" href="http://www.bloglovin.com/en/blog/2700962/justpatience/follow"><img alt="bloglovin" style="margin-top:10px;"  src="http://www.bloglovin.com/widget/bilder/en/lank.gif" /></a>
 

@@ -59,9 +59,9 @@
 		
 		
 		<div class="entry-utility">
-		     <?php printf( __( 'This entry was posted in %1$s%2$s.' ),
-		      get_the_category_list(', '),
-		      get_the_tag_list( __( ' and tagged ', 'your-theme' ), ', ', '' ),
+		     <?php printf( // __( 'This entry was posted in %1$s%2$s.' ),
+		     // 		      get_the_category_list(', '),
+		      get_the_tag_list( __( 'Tags ', 'your-theme' ), ', ', '' ),
 		      get_permalink(),
 		      the_title_attribute('echo=0'),
 		      comments_rss() ) ?>

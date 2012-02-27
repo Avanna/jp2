@@ -102,11 +102,7 @@ function custom_comments($comment, $args, $depth) {
 						
 	
                 <div class="comment-author vcard"><?php commenter_link() ?></div>
-                <div class="comment-meta"><?php printf(__('Posted %1$s at %2$s', 'your-theme'),
-                                        get_comment_date(),
-                                        get_comment_time(),
-                                        '#comment-' . get_comment_ID() );
-                                        edit_comment_link(__('Edit', 'your-theme'), ' <span class="meta-sep">|</span> <span class="edit-link">', '</span>'); ?></div>
+                
 
 <span id="comment_number"><?php echo $GLOBALS['comment_number']; ?></span>
 
@@ -117,6 +113,13 @@ function custom_comments($comment, $args, $depth) {
           <div class="comment-content">
                 <?php comment_text() ?>
                 </div>
+
+				<div class="comment-meta"><?php printf(__('Posted %1$s at %2$s', 'your-theme'),
+                                        get_comment_date(),
+                                        get_comment_time(),
+                                        '#comment-' . get_comment_ID() );
+                                        edit_comment_link(__('Edit', 'your-theme'), ' <span class="meta-sep">|</span> <span class="edit-link">', '</span>'); ?></div>
+
                 <?php // echo the comment reply link
                         if($args['type'] == 'all' || get_comment_type() == 'comment') :
                                 comment_reply_link(array_merge($args, array(

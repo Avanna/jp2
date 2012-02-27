@@ -45,7 +45,24 @@
 
 <body>
 	
-	<div id="subscribe"><img src="<?php echo(get_bloginfo('template_directory')); ?>/images/subscribe.png" width="" height="" alt="" /></div>
+	<div id="subscribe">
+		
+	<div id="subscribe-link">
+		<a href="#"><img src="<?php echo(get_bloginfo('template_directory')); ?>/images/subscribe.png" width="" height="" alt="" /></a>
+		
+	</div><!-- sub link -->
+	
+		<div id="subscription">
+			
+			<form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=Justpatience', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><h3>Email Subscription</h3><p><input type="text" style="width:160px" name="email"/></p><input type="hidden" value="Justpatience" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /></form>
+			
+		<span class="close"><a href="#">X close</a></span>	
+			
+		</div><!--/subscription-->	
+		
+		
+		
+	</div><!--subscribe -->
 	
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
@@ -102,12 +119,9 @@
 			</ul>
 
 
-			<form id="search-form">
+			<?php get_search_form($echo); ?>
 
-				<input type="text" id="search" name="search" value=""/>
-				<input type="image" id="search-submit" src="<?php echo(get_bloginfo('template_directory')); ?>/images/search_icon.png" name="search-submit" alt="search" />
-
-			</form>	
+			
 
 		</div><!--/menu-->
 	

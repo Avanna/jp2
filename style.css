@@ -7,6 +7,18 @@ Author: Ranga Mapuvire
 Author URI: http://www.KonvergeStudios.com
 */
 
+@font-face {
+    font-family: 'EnglandHandDBRegular';
+    src: url('fonts/england-webfont.eot');
+    src: url('fonts/england-webfont.eot?iefix') format('eot'),
+         url('fonts/england-webfont.woff') format('woff'),
+         url('fonts/england-webfont.ttf') format('truetype'),
+         url('fonts/england-webfont.svg#webfontZ3zScwRm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -207,7 +219,7 @@ h4 {
 }
 
 .main_nav li {
-	font-family:'Zapfino';
+	font-family:'Zapfino','EnglandHandDBRegular';
 	font-size:14px;
 	font-weight:;
 	font-style:;
@@ -301,7 +313,8 @@ h4 {
 
 #sidebar ul li{
 	width:;
-	font-size:16px;
+	font-family:verdana, arial, sans-serif;
+	font-size:14px;
 	line-height:22px;
 }
 
@@ -403,14 +416,13 @@ h3.comment span {
 }
 
 #sidebar h2 {
-	height:50px;
 	width:;
-	font-family:'Zapfino';
+	font-family:'Zapfino','EnglandHandDBRegular';
 	font-size:18px;
 	font-weight:;
 	font-style:italic;
-	padding:;
-	margin:30px 0 18px 0;
+	padding: 24px 0 6px 0;
+	margin:18px 0 18px 0;
 	text-align:center;
 	text-transform:capitalize;
 	color:#222;
@@ -424,10 +436,10 @@ h3.comment span {
 
 
 p {
-	font-family:georgia, serif;
-	font-size:12px;
+	font-family:verdana, georgia, serif;
+	font-size:13px;
 	font-style:;
-	line-height:15px;
+	line-height:20px;
 	color:#333;
 	margin:9px 0 18px 0;
 }
@@ -445,6 +457,10 @@ p {
 	text-transform:capitalize;
 	line-height:26px;
 	margin:0 0 36px 0;
+}
+
+.post a {
+	color: #E24634;
 }
 
 .postdate p {
@@ -493,7 +509,7 @@ p {
 }
 
 .postdate span {
-	font-family:'trebuchet MS';
+	font-family:;
 	font-size:30px;
 	padding:12px 0 6px 0;
 	margin:0 0 12px 0;
@@ -527,13 +543,6 @@ p {
 	color:#fff;
 }
 
-
-.tagline {
-	font-family:'italianno';
-	font-size:36px;
-	color:#888;
-	text-align:;
-}
 
 #search-form {
 	float:right;
@@ -689,9 +698,13 @@ p {
 }
 
 #comments p {
-	font-size:14px;
+	font-size:13px;
 	line-height:18px;
 	margin:0 0 18px 0;
+}
+
+#comments p a {
+	color: #E24634;
 }
 
 #comment_number {
@@ -713,14 +726,15 @@ p {
 }
 
 span.fn {
-	font-family:;
-	font-size:18px;
-	margin:0 0 9px 0;
-	font-style:italic;
+	font-family:verdana;
+	font-size:14px;
+	margin:0 0 0 0;
 }
 
 span.fn a{
-	color:#333;
+	color:#36c;
+	font-weight:bold;
+	text-transform:capitalize;
 	text-decoration:none;
 }
 
@@ -772,6 +786,8 @@ a.comment-reply-link {
 }
 
 #nav-below a {
+	font-size:13px;
+	font-family:verdana, arial, sans-serif;
 	color:#555;
 }
 
@@ -783,9 +799,16 @@ a.comment-reply-link {
 	margin:9px 0;
 }
 
+.entry-utility span {
+	font-size:14px;
+	font-family:verdana, arial, sans-serif;
+}
+
 .entry-utility a {
-	font-style:italic;
+	font-family:verdana, arial, sans-serif;
+	font-size:13px;
 	color:#e24634;
+	text-decoration:none;
 	text-transform:capitalize;
 }
 
@@ -936,7 +959,7 @@ color:#fff;
 }
 
 .footer-nav li {
-	font-family:'lucida grande';
+	font-family:;
 	font-size:16px;
 	font-weight:;
 	font-style:;
@@ -1114,37 +1137,6 @@ color:#fff;
 	color:#f4f4f4;
 }
 
-#top_nav {
-	height:36px;
-	border-bottom:2px #555 solid;
-	background:#fff;
-	margin:0;
-	overflow:visible;
-	z-index:9999;
-}
-
-#top_nav ul {
-	width:960px;
-	margin:0 auto;
-	/*overflow:hidden;*/
-}
-
-#top_nav ul>li {
-	float:left;
-	font-family:arial;
-	font-size:12px;
-	line-height:36px;
-	text-transform:uppercase;
-	padding:0 48px 0 0;
-	margin:0 48px 0 0;
-	border-right:1px #ddd solid;
-	position:relative;
-}
-
-#top_nav ul li a {
-	color:#555;
-	text-decoration:none;
-}
 
 /*----------------------------------- drop down nav styles ------------------------------*/
 
@@ -1173,8 +1165,32 @@ color:#fff;
 
 #subscribe {
 	position:fixed;
-	top:300px;
-	right:0;
+	top:360px;
+	right:-240px;
+	z-index:2000000;
+}
+
+#subscribe-link {
+	float:left;
+}
+
+#subscription {
+	float:left;
+	height:93px;
+	width:200px;
+	padding:20px;
+	background:#fff;
+	position:relative;
+}
+
+.close {
+	font-size:12px;
+	position:absolute;
+	left:120px;
+	bottom:30px;
+	font-weight:bold;
+	text-decoration:underline;
+	color:#E24634;
 }
 
 #contact_form {
@@ -1206,6 +1222,9 @@ color:#fff;
 	border-bottom: 1px #555 dotted;
 }
 
+.comments-link {
+	border-bottom:1px #777 dashed;
+}
 
 
 

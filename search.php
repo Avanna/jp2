@@ -16,6 +16,20 @@
 			}
 
 			?>
+			
+			<?php
+			global $query_string;
+
+			$query_args = explode("&", $query_string);
+			$search_query = array();
+
+			foreach($query_args as $key => $string) {
+				$query_split = explode("=", $string);
+				$search_query[$query_split[0]] = urldecode($query_split[1]);
+			} // foreach
+
+			$search = new WP_Query($search_query);
+			?>
 
 
 
@@ -70,11 +84,11 @@
 
 			<?php /* Microformatted category and tag links along with a comments link */ ?>    
 			     <div class="entry-utility">
-			      <!-- <p><span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links"><?php _e( 'Posted in ', 'your-theme' ); ?></span><?php echo get_the_category_list(', '); ?></span>
-			      			      <span class="meta-sep"> | </span> -->
-			      <?php the_tags( '<span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">' . __('Tags ', 'your-theme' ) . '</span>') ?>
+			      <p><span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links"><?php _e( 'Posted in ', 'your-theme' ); ?></span><?php echo get_the_category_list(', '); ?></span>
+			      <span class="meta-sep"> | </span>
+			      <?php the_tags( '<span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">' . __('Tagged ', 'your-theme' ) . '</span>', ", ", "</span>\n\t\t\t\t\t\t<span class=\"meta-sep\">|</span>\n" ) ?>
 			
-			
+				<span class="meta-sep"></span>
 				
 				<br />
 				<br />

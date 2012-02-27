@@ -17,7 +17,7 @@
 
 	
 
-	<a href="<?php echo get_page_link(36); ?>"><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/gmail2.png" width="40" alt="" /></a>
+	<a href="<?php echo get_page_link(24); ?>"><img class="no-border" src="<?php echo(get_bloginfo('template_directory')); ?>/images/gmail2.png" width="40" alt="" /></a>
 
 	<div class="blog_loving clearfix" style="text-align:center; margin-bottom:0px;">
 	
@@ -72,9 +72,9 @@
 			</div></a>
 
 			<div class="category">
-				<p>giveaways</p>
+				<p>fashion</p>
 
-				<?php $category_id = get_cat_ID( 'giveaways' );
+				<?php $category_id = get_cat_ID( 'fashion' );
 
 				    // Get the URL of this category
 				    $category_link = get_category_link( $category_id );
